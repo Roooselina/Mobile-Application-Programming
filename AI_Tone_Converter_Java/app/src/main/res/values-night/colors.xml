@@ -1,0 +1,22 @@
+<resources>
+    <!-- 버튼 텍스트는 다크에서도 순백 유지 -->
+    <color name="white">#FFFFFF</color>
+
+    <!-- 다크 기준색 #121212, 표면은 단계적으로 농도 변경 -->
+    <color name="bg">#121212</color>
+    <color name="surface">#1C1C1E</color>
+    <color name="sidebar_bg">#161617</color>
+
+    <!-- 글자는 흰색 기반 (본문 순백, 보조는 밝은 회색) -->
+    <color name="text_main">#FFFFFF</color>
+    <color name="text_sub">#B3FFFFFF</color>
+    <color name="line">#2C2C2E</color>
+
+    <!-- 다크에서 더 잘 보이는 밝은 블루 액센트 -->
+    <color name="blue">#6E9BFF</color>
+    <color name="blue_dark">#8AB0FF</color>
+    <color name="blue_light">#1A2740</color>
+    <color name="selected_bg">#1A2740</color>
+    <color name="danger">#FF6B6B</color>
+    <color name="btn_primary">#3568E0</color>
+</resources>

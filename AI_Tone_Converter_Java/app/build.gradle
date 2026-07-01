@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.application'
+}
+
+import java.util.Properties
+
+// Read API config from local.properties (key/url/model), with safe defaults.
+def configProps = new Properties()
+def localPropsFile = rootProject.file("local.properties")
+if (localPropsFile.exists()) {
+    localPropsFile.withInputStream { configProps.load(it) }
+}
+def cfg = { String key, String def_ ->
+    def v = configProps.getProperty(key)
+    if (v != null && !v.trim().isEmpty()) return v
+    def env = System.getenv(key)
+    if (env != null && !env.trim().isEmpty()) return env
+    return def_
+}
+def apiKey = cfg("ANTHROPIC_API_KEY", "")
+def gatewayBaseUrl = cfg("GATEWAY_BASE_URL", "https://factchat-cloud.mindlogic.ai/v1/gateway/")
+def gatewayModel = cfg("GATEWAY_MODEL", "claude-sonnet-4-6")
+// 이메일 인증 발송용 SMTP 설정 (비워두면 데모 모드로 동작: 코드가 화면에 표시됨)
+def smtpHost = cfg("SMTP_HOST", "smtp.gmail.com")
+def smtpPort = cfg("SMTP_PORT", "587")
+def smtpEmail = cfg("SMTP_EMAIL", "")
+def smtpPassword = cfg("SMTP_PASSWORD", "")
+
+android {
+    namespace 'com.example.aitonechanger'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.aitonechanger"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField "String", "ANTHROPIC_API_KEY", "\"${apiKey}\""
+        buildConfigField "String", "GATEWAY_BASE_URL", "\"${gatewayBaseUrl}\""
+        buildConfigField "String", "GATEWAY_MODEL", "\"${gatewayModel}\""
+        buildConfigField "String", "SMTP_HOST", "\"${smtpHost}\""
+        buildConfigField "String", "SMTP_PORT", "\"${smtpPort}\""
+        buildConfigField "String", "SMTP_EMAIL", "\"${smtpEmail}\""
+        buildConfigField "String", "SMTP_PASSWORD", "\"${smtpPassword}\""
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/NOTICE.txt', 'META-INF/LICENSE.txt', 'META-INF/NOTICE.md', 'META-INF/LICENSE.md']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation 'com.squareup.retrofit2:retrofit:2.11.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.12.0'
+
+    // 이메일 인증 발송 (JavaMail for Android)
+    implementation 'com.sun.mail:android-mail:1.6.7'
+    implementation 'com.sun.mail:android-activation:1.6.7'
+}

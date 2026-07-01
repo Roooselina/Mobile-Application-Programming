@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <!-- 상단 바 (상태바 클리어는 BaseActivity 인셋 처리) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:background="@color/surface">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_left"
+            android:contentDescription="뒤로가기" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="앱 설정"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/text_main" />
+
+        <Space
+            android:layout_width="48dp"
+            android:layout_height="1dp" />
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <!-- ============ AI 설정 ============ -->
+            <TextView style="@style/SettingsSection" android:text="AI 설정" />
+
+            <LinearLayout style="@style/SettingsCard">
+
+                <TextView style="@style/SettingsRowLabel" android:text="기본 변환 강도" />
+
+                <LinearLayout style="@style/SegRow">
+                    <TextView android:id="@+id/segStrengthKeep" style="@style/SegItem" android:text="원문 최대 유지" />
+                    <TextView android:id="@+id/segStrengthBalanced" style="@style/SegItem" android:text="균형" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <TextView style="@style/SettingsRowLabel" android:text="응답 길이" />
+
+                <LinearLayout style="@style/SegRow">
+                    <TextView android:id="@+id/segLenShort" style="@style/SegItem" android:text="짧게" />
+                    <TextView android:id="@+id/segLenNormal" style="@style/SegItem" android:text="보통" />
+                    <TextView android:id="@+id/segLenDetailed" style="@style/SegItem" android:text="자세하게" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="실시간 변환 미리보기"
+                            android:textColor="@color/text_main"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="입력을 멈추면 변환 결과를 미리 보여줘요. (API 사용량 증가)"
+                            android:textColor="@color/text_sub"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <Switch
+                        android:id="@+id/switchLivePreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- ============ 사용자 프로필 ============ -->
+            <TextView style="@style/SettingsSection" android:text="사용자 프로필" />
+
+            <LinearLayout style="@style/SettingsCard">
+
+                <TextView style="@style/SettingsRowLabel" android:text="기본 정보 저장" />
+
+                <EditText android:id="@+id/editProfileName" style="@style/SettingsInput" android:hint="이름" android:inputType="textPersonName" />
+                <EditText android:id="@+id/editAffiliation" style="@style/SettingsInput" android:hint="소속" android:inputType="text" android:layout_marginTop="10dp" />
+                <EditText android:id="@+id/editPosition" style="@style/SettingsInput" android:hint="직책" android:inputType="text" android:layout_marginTop="10dp" />
+
+                <View style="@style/SettingsDivider" />
+
+                <TextView style="@style/SettingsRowLabel" android:text="특정 표현 금지" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="결과에 쓰지 않을 표현을 쉼표로 구분해 입력하세요."
+                    android:textColor="@color/text_sub"
+                    android:textSize="12sp" />
+                <EditText
+                    android:id="@+id/editForbidden"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:background="@drawable/rounded_input"
+                    android:gravity="top|start"
+                    android:hint="예) ~인 것 같아요, 헐, 대박"
+                    android:inputType="textMultiLine"
+                    android:padding="14dp"
+                    android:textColor="@color/text_main"
+                    android:textColorHint="@color/text_sub"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- ============ 사용량 및 결제 (UI 전용, 동작 없음) ============ -->
+            <TextView style="@style/SettingsSection" android:text="사용량 및 결제" />
+
+            <LinearLayout style="@style/SettingsCard">
+
+                <LinearLayout android:id="@+id/rowCredit" style="@style/SettingsNavRow">
+                    <ImageView style="@style/SettingsRowIcon" android:src="@drawable/ic_check_blue" />
+                    <TextView style="@style/SettingsNavText" android:text="보유 크레딧" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1,200 C"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="6dp" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout android:id="@+id/rowHistory" style="@style/SettingsNavRow">
+                    <ImageView style="@style/SettingsRowIcon" android:src="@drawable/ic_clock" />
+                    <TextView style="@style/SettingsNavText" android:text="사용 내역" />
+                    <ImageView style="@style/SettingsChevron" android:src="@drawable/ic_chevron_right" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout android:id="@+id/rowRecharge" style="@style/SettingsNavRow">
+                    <ImageView style="@style/SettingsRowIcon" android:src="@drawable/ic_plus" />
+                    <TextView style="@style/SettingsNavText" android:text="크레딧 충전" />
+                    <ImageView style="@style/SettingsChevron" android:src="@drawable/ic_chevron_right" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout android:id="@+id/rowSubscription" style="@style/SettingsNavRow">
+                    <ImageView style="@style/SettingsRowIcon" android:src="@drawable/ic_star_blue" />
+                    <TextView style="@style/SettingsNavText" android:text="구독 관리" />
+                    <ImageView style="@style/SettingsChevron" android:src="@drawable/ic_chevron_right" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout android:id="@+id/rowDailyUsage" style="@style/SettingsNavRow">
+                    <ImageView style="@style/SettingsRowIcon" android:src="@drawable/ic_message_square" />
+                    <TextView style="@style/SettingsNavText" android:text="일일 사용량 확인" />
+                    <ImageView style="@style/SettingsChevron" android:src="@drawable/ic_chevron_right" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- ============ 화면 설정 ============ -->
+            <TextView style="@style/SettingsSection" android:text="화면 설정" />
+
+            <LinearLayout style="@style/SettingsCard">
+
+                <TextView style="@style/SettingsRowLabel" android:text="다크 모드 / 일반 모드" />
+
+                <LinearLayout style="@style/SegRow">
+                    <TextView android:id="@+id/segThemeSystem" style="@style/SegItem" android:text="시스템" />
+                    <TextView android:id="@+id/segThemeLight" style="@style/SegItem" android:text="일반" />
+                    <TextView android:id="@+id/segThemeDark" style="@style/SegItem" android:text="다크" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <TextView style="@style/SettingsRowLabel" android:text="글자 크기" />
+
+                <LinearLayout style="@style/SegRow">
+                    <TextView android:id="@+id/segFontSmall" style="@style/SegItem" android:text="작게" />
+                    <TextView android:id="@+id/segFontNormal" style="@style/SegItem" android:text="보통" />
+                    <TextView android:id="@+id/segFontLarge" style="@style/SegItem" android:text="크게" />
+                    <TextView android:id="@+id/segFontXLarge" style="@style/SegItem" android:text="아주 크게" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSaveSettings"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_primary"
+                android:text="저장"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

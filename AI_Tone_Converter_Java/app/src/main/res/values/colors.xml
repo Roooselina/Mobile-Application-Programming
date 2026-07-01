@@ -1,0 +1,23 @@
+<resources>
+    <!-- 버튼 텍스트 등 항상 순백이 필요한 곳 -->
+    <color name="white">#FFFFFF</color>
+
+    <!-- 화면 배경: 눈이 편안한 차분한 오프화이트 -->
+    <color name="bg">#F4F5F7</color>
+    <!-- 카드/상단바/입력 표면: 살짝 톤다운된 화이트 -->
+    <color name="surface">#FCFDFE</color>
+    <color name="sidebar_bg">#F6F7F9</color>
+
+    <!-- 텍스트: 또렷한 근접 블랙 + 차분한 슬레이트 -->
+    <color name="text_main">#16181D</color>
+    <color name="text_sub">#6B7280</color>
+    <color name="line">#E7E9EE</color>
+
+    <!-- 정제된 블루 액센트 -->
+    <color name="blue">#2F6BED</color>
+    <color name="blue_dark">#2457D6</color>
+    <color name="blue_light">#ECF1FE</color>
+    <color name="selected_bg">#EEF3FE</color>
+    <color name="danger">#EF4444</color>
+    <color name="btn_primary">#2F6BED</color>
+</resources>

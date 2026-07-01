@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/surface">
+
+    <!-- 상단 바 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="18dp"
+        android:background="@color/surface">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_left"
+            android:contentDescription="뒤로가기" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="회원가입"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/text_main" />
+
+        <Space
+            android:layout_width="48dp"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <!-- 본문: 화면 전체를 채우도록 fillViewport + 가변 Space 사용 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:paddingTop="36dp"
+            android:paddingBottom="28dp">
+
+            <!-- 헤더 -->
+            <FrameLayout
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/rounded_icon_blue_light">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_message_square" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="환영합니다"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:textColor="@color/text_main" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="계정을 만들고 AI 말투 변환기를 시작해보세요."
+                android:textSize="14sp"
+                android:textColor="@color/text_sub" />
+
+            <!-- 이름 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:layout_marginBottom="8dp"
+                android:text="이름"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/text_main" />
+
+            <EditText
+                android:id="@+id/signName"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/rounded_input_gray"
+                android:hint="이름을 입력해주세요"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+            <!-- 이메일 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="8dp"
+                android:text="이메일"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/text_main" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/signEmail"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="54dp"
+                    android:background="@drawable/rounded_input_gray"
+                    android:hint="이메일을 입력해주세요"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress" />
+
+                <Button
+                    android:id="@+id/btnSendCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="8dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:background="@drawable/rounded_blue_dark"
+                    android:text="인증요청"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <!-- 인증코드 입력 (인증요청 후 표시) -->
+            <LinearLayout
+                android:id="@+id/rowVerifyCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/signVerifyCode"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="54dp"
+                    android:background="@drawable/rounded_input_gray"
+                    android:hint="인증코드 6자리"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:maxLength="6"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btnVerifyCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="8dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:background="@drawable/rounded_blue_dark"
+                    android:text="확인"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtVerifyStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="이메일 인증이 필요합니다."
+                android:textSize="12sp"
+                android:textColor="@color/text_sub" />
+
+            <!-- 비밀번호 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="8dp"
+                android:text="비밀번호"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/text_main" />
+
+            <EditText
+                android:id="@+id/signPw"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/rounded_input_gray"
+                android:hint="비밀번호를 입력해주세요"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="6자 이상 입력해주세요."
+                android:textSize="12sp"
+                android:textColor="@color/text_sub" />
+
+            <!-- 비밀번호 확인 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="8dp"
+                android:text="비밀번호 확인"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/text_main" />
+
+            <EditText
+                android:id="@+id/signPw2"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/rounded_input_gray"
+                android:hint="비밀번호를 다시 입력해주세요"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:inputType="textPassword" />
+
+            <!-- 가변 여백: 버튼을 화면 하단으로 밀어 전체 화면 활용 -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:minHeight="32dp" />
+
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/rounded_primary"
+                android:text="회원가입"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtGoLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="이미 계정이 있으신가요?  로그인"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/text_sub" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

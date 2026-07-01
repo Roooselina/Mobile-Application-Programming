@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 뒤로가기: 현재 화면이 오른쪽으로 부드럽게 빠지며 페이드아웃 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/decelerate_interpolator">
+    <translate android:fromXDelta="0" android:toXDelta="6%p" android:duration="280" />
+    <alpha android:fromAlpha="1.0" android:toAlpha="0.0" android:duration="240" />
+</set>

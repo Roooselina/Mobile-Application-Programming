@@ -1,0 +1,205 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_card"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:paddingTop="14dp"
+    android:paddingBottom="22dp">
+
+    <!-- 닫기 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_close"
+            android:contentDescription="닫기" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="프롬프트 설정"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/text_main" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="이 대화에 적용 중인 설정이에요. 바로 수정할 수 있어요."
+        android:textSize="13sp"
+        android:textColor="@color/text_sub" />
+
+    <!-- 내용이 길면 이 영역만 스크롤 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="14dp"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="대화 상대"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@color/text_main" />
+
+            <EditText
+                android:id="@+id/editPromptName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_input"
+                android:hint="예) 교수님, 직장 상사, 거래처"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColor="@color/text_main"
+                android:textColorHint="@color/text_sub"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="그룹"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@color/text_main" />
+
+            <EditText
+                android:id="@+id/editGroup"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_input"
+                android:hint="예) 직장, 학교, 가족"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColor="@color/text_main"
+                android:textColorHint="@color/text_sub"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="나에 대한 정보"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@color/text_main" />
+
+            <EditText
+                android:id="@+id/editPersona"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_input"
+                android:gravity="top|start"
+                android:hint="비워두면 설정에 저장된 내 정보가 자동으로 사용돼요."
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textColor="@color/text_main"
+                android:textColorHint="@color/text_sub"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="말투 키워드 (최대 5개)"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_main" />
+
+                <TextView
+                    android:id="@+id/txtCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/5"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_sub" />
+
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/keywordGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:columnCount="3" />
+
+            <Button
+                android:id="@+id/btnAddKeyword"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/chip_unselected"
+                android:text="+ 직접 추가"
+                android:textSize="13sp"
+                android:textColor="@color/text_main" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="반드시 기억해야 할 정보"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@color/text_main" />
+
+            <EditText
+                android:id="@+id/editMemory"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_input"
+                android:gravity="top|start"
+                android:hint="모든 답변에 항상 반영할 규칙"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:textColor="@color/text_main"
+                android:textColorHint="@color/text_sub"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/rounded_primary"
+        android:text="저장하기"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

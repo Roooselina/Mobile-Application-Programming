@@ -1,0 +1,262 @@
+[
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_rounded_icon_blue_light.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/rounded_icon_blue_light.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_menu.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_menu.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_row_sidebar_ripple.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/row_sidebar_ripple.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/layout_activity_profile_edit.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/layout/activity_profile_edit.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_rounded_menu.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/rounded_menu.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_check_blue.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_check_blue.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_rounded_bottom_sheet.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/rounded_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_splash_logo_box.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/splash_logo_box.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_chat_user.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/chat_user.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_seg_selected.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/seg_selected.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_logout.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/anim_anim_exit.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/anim/anim_exit.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/layout_activity_search.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/layout/activity_search.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/anim_anim_pop_enter.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/anim/anim_pop_enter.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_user_cog.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_user_cog.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_rounded_card.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/rounded_card.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_search.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_chip_unselected.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/chip_unselected.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_more_vertical.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_more_vertical.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_chevron_right.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_chip_selected.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/chip_selected.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_row_profile_ripple.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/row_profile_ripple.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/layout_activity_profile.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_trash.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_trash.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_send.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_send.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_thumb_up.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_thumb_up.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_share.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_share.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_profile.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_profile.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_key.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_key.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/layout_activity_settings.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/layout_activity_prompt_edit.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/layout/activity_prompt_edit.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/layout_activity_password_change.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/layout/activity_password_change.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/anim_anim_enter.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/anim/anim_enter.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_user.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_user.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_rounded_blue_dark.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/rounded_blue_dark.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/layout_activity_prompt_create_keywords.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/layout/activity_prompt_create_keywords.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_profile_circle_bg.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/profile_circle_bg.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/layout_activity_splash.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_user_blue.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_user_blue.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_copy.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_copy.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_close.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/layout_activity_prompt_create.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/layout/activity_prompt_create.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_plus.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_plus.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_rounded_avatar.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/rounded_avatar.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_circle_blue_light.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/circle_blue_light.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_rounded_primary.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/rounded_primary.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_pencil.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_pencil.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_regenerate.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_regenerate.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_app_launcher.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_app_launcher.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_selected_row.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/selected_row.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_seg_unselected.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/seg_unselected.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_message_square.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_message_square.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/anim_anim_pop_exit.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/anim/anim_pop_exit.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_settings.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_rounded_input_gray.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/rounded_input_gray.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/layout_activity_login.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_chat_ai.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/chat_ai.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_rounded_input.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/rounded_input.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_star_outline.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_star_outline.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_circle_blue.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/circle_blue.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/layout_activity_signup.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_star_blue.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_star_blue.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_arrow_left.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_arrow_left.xml"
+    },
+    {
+        "merged": "com.example.aitonechanger.app-debug-4:/drawable_ic_clock.xml.flat",
+        "source": "com.example.aitonechanger.app-main-6:/drawable/ic_clock.xml"
+    }
+]

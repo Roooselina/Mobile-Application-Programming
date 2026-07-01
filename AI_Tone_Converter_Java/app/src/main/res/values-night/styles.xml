@@ -1,0 +1,19 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+    </style>
+
+    <!-- 팝업(다이얼로그) 형태 화면 - 다크 모드 -->
+    <style name="AppDialogTheme" parent="android:style/Theme.Material.Dialog.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowMinWidthMajor">92%</item>
+        <item name="android:windowMinWidthMinor">92%</item>
+    </style>
+</resources>

@@ -1,0 +1,17 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/surface">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:padding="28dp">
+        <Space android:layout_width="1dp" android:layout_height="70dp" />
+        <FrameLayout android:layout_width="76dp" android:layout_height="76dp" android:background="@drawable/rounded_icon_blue_light"><ImageView android:layout_width="42dp" android:layout_height="42dp" android:layout_gravity="center" android:src="@drawable/ic_message_square" /></FrameLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="AI 오늘의 말투\n변환기" android:textAlignment="center" android:textStyle="bold" android:textSize="24sp" android:lineSpacingExtra="4dp" android:textColor="@color/text_main" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="상황과 목적에 맞게\n어떤 말투로 말할지 고민될 때,\nAI가 도와드릴게요." android:textAlignment="center" android:textSize="14sp" android:lineSpacingExtra="5dp" android:textColor="@color/text_sub" />
+        <EditText android:id="@+id/loginEmail" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="42dp" android:background="@drawable/rounded_input_gray" android:hint="이메일을 입력해주세요" android:paddingLeft="16dp" android:paddingRight="16dp" android:textSize="14sp" android:singleLine="true" />
+        <EditText android:id="@+id/loginPassword" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="12dp" android:background="@drawable/rounded_input_gray" android:hint="비밀번호를 입력해주세요" android:paddingLeft="16dp" android:paddingRight="16dp" android:textSize="14sp" android:singleLine="true" android:inputType="textPassword" />
+        <Button android:id="@+id/btnLogin" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="18dp" android:background="@drawable/rounded_primary" android:text="로그인" android:textColor="@color/white" android:textStyle="bold" />
+        <TextView android:id="@+id/txtForgotPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:padding="4dp" android:text="비밀번호를 잊으셨나요?" android:textColor="@color/text_sub" android:textSize="13sp" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="계정이 없으신가요? " android:textColor="@color/text_sub" android:textSize="14sp" />
+            <TextView android:id="@+id/txtGoSignup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="회원가입" android:textStyle="bold" android:textColor="@color/blue" android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

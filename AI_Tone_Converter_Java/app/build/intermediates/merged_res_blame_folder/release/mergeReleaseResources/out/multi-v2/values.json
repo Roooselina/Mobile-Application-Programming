@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.aitonechanger.app-mergeReleaseResources-2:/values/values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ipl\\AndroidStudioProjects\\AI_Tone_Converter_Java\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "50",
+                        "endOffsets": "62"
+                    },
+                    "to": {
+                        "startLines": "15",
+                        "startColumns": "4",
+                        "startOffsets": "606",
+                        "endColumns": "50",
+                        "endOffsets": "652"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ipl\\AndroidStudioProjects\\AI_Tone_Converter_Java\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "10,1,53,47,30,111,67,75,86,103,97,38,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "486,16,2457,2233,1486,5042,3112,3455,3975,4712,4496,1833,972",
+                        "endLines": "17,7,65,51,36,114,73,84,95,109,101,45,28",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "966,421,3106,2451,1827,5194,3449,3969,4490,5036,4706,2227,1480"
+                    },
+                    "to": {
+                        "startLines": "16,24,31,44,49,56,60,67,77,87,94,99,107",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "657,1142,1552,2206,2429,2775,2932,3274,3793,4313,4642,4857,5256",
+                        "endLines": "23,30,43,48,55,59,66,76,86,93,98,106,116",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "1137,1547,2201,2424,2770,2927,3269,3788,4308,4637,4852,5251,5764"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ipl\\AndroidStudioProjects\\AI_Tone_Converter_Java\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "5,16,17,18,21,20,13,19,8,7,11,12,2",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "129,483,522,566,698,657,419,611,247,205,332,376,51",
+                        "endColumns": "36,38,43,44,45,40,38,45,44,41,43,42,39",
+                        "endOffsets": "161,517,561,606,739,693,453,652,287,242,371,414,86"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,92,131,175,220,266,307,346,392,437,479,523,566",
+                        "endColumns": "36,38,43,44,45,40,38,45,44,41,43,42,39",
+                        "endOffsets": "87,126,170,215,261,302,341,387,432,474,518,561,601"
+                    }
+                }
+            ]
+        }
+    ]
+}

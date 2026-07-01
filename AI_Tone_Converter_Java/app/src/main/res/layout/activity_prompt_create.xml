@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_card"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:paddingTop="14dp"
+    android:paddingBottom="22dp">
+
+    <!-- 닫기 + 단계 표시 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:text="1 / 2"
+            android:textSize="12sp"
+            android:textColor="@color/text_sub" />
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_close"
+            android:contentDescription="닫기" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="새 프롬프트 생성"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/text_main" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="누구와의 대화인지 알려주세요."
+        android:textSize="13sp"
+        android:textColor="@color/text_sub" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="대화 상대"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="@color/text_main" />
+
+    <EditText
+        android:id="@+id/editPromptName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_input"
+        android:hint="예) 교수님, 직장 상사, 거래처"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:textColor="@color/text_main"
+        android:textColorHint="@color/text_sub"
+        android:textSize="14sp"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="그룹 (선택)"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="@color/text_main" />
+
+    <EditText
+        android:id="@+id/editGroup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_input"
+        android:hint="예) 직장, 학교, 가족"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:textColor="@color/text_main"
+        android:textColorHint="@color/text_sub"
+        android:textSize="14sp"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="나에 대한 정보 (선택)"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="@color/text_main" />
+
+    <EditText
+        android:id="@+id/editPersona"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_input"
+        android:gravity="top|start"
+        android:hint="예) 00대학교 홍길동"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textColor="@color/text_main"
+        android:textColorHint="@color/text_sub"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtPersonaHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="비워두면 설정에 저장된 내 정보가 자동으로 사용돼요."
+        android:textColor="@color/text_sub"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/rounded_primary"
+        android:text="다음"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
