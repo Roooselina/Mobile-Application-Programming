@@ -1,0 +1,19 @@
+# Credentials - never commit
+local.properties
+
+# Gradle build cache
+.gradle/
+build/
+app/build/
+
+# Android Studio project files
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# APK and keystore files
+*.apk
+*.aab
+*.jks
+*.keystore

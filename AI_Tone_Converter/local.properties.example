@@ -1,0 +1,19 @@
+# Copy this file to local.properties and fill in your own credentials.
+# local.properties is listed in .gitignore and must never be committed.
+
+# Anthropic Claude API key
+# Get one at https://console.anthropic.com
+ANTHROPIC_API_KEY=
+
+# API endpoint and model
+GATEWAY_BASE_URL=https://api.anthropic.com/
+GATEWAY_MODEL=claude-sonnet-4-6
+
+# SMTP settings for email verification (Gmail recommended)
+# Generate a Gmail App Password at:
+# Google Account > Security > 2-Step Verification > App passwords
+# Leave blank to run in demo mode (verification code shown on screen instead)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_EMAIL=
+SMTP_PASSWORD=

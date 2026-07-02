@@ -1,7 +1,0 @@
-com.example.aitonechanger.app-pngs-0 C:\Users\ipl\AndroidStudioProjects\AI_Tone_Converter_Java\app\build\generated\res\pngs\release
-com.example.aitonechanger.app-resValues-1 C:\Users\ipl\AndroidStudioProjects\AI_Tone_Converter_Java\app\build\generated\res\resValues\release
-com.example.aitonechanger.app-packageReleaseResources-2 C:\Users\ipl\AndroidStudioProjects\AI_Tone_Converter_Java\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
-com.example.aitonechanger.app-packageReleaseResources-3 C:\Users\ipl\AndroidStudioProjects\AI_Tone_Converter_Java\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
-com.example.aitonechanger.app-release-4 C:\Users\ipl\AndroidStudioProjects\AI_Tone_Converter_Java\app\build\intermediates\merged_res\release\mergeReleaseResources
-com.example.aitonechanger.app-main-5 C:\Users\ipl\AndroidStudioProjects\AI_Tone_Converter_Java\app\src\main\res
-com.example.aitonechanger.app-release-6 C:\Users\ipl\AndroidStudioProjects\AI_Tone_Converter_Java\app\src\release\res
