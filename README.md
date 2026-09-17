@@ -1,11 +1,36 @@
-# AI Tone Converter (AI 오늘의 말투 변환기)
+# AI 오늘의 말투 변환기
 
-Android app that converts Korean messages into the appropriate speech level for each recipient,
-using the Anthropic Claude API as the conversion engine.
+상대와 상황에 맞게 한국어 문장을 변환하는 Android 앱입니다.
+대상별 말투 설정과 대화 이력을 저장하고, Claude API에 함께 전달합니다.
 
-Soonchunhyang University, Department of Computer Science and Engineering
-Smartphone Application Programming — Final Project, 2026
-Team: 20234024 Park Gayoung / 20234014 Lee Eunjung / 20234036 Jo Hanbin
+- 순천향대학교 스마트폰 애플리케이션 프로그래밍 기말 프로젝트 · 2026
+- 개발 기간: 약 3개월 · 팀원 3명
+- 사용 기술: Java, SQLite, Retrofit, OkHttp, Claude API
+
+## 담당 업무
+
+| 팀원 | 담당 |
+|---|---|
+| 이은정 | Android 개발, DB, 인증, 대화 로직, API 연동 |
+| 박가영 | UI/UX 디자인 |
+| 조한빈 | API 연동, 프롬프트 작성, 기능 개선 |
+
+## 구현 내용
+
+- SQLite에 계정별 프롬프트와 대화 이력, 응답 버전을 저장했습니다.
+- 이메일 인증과 비밀번호 재설정 흐름을 구현했습니다.
+- Retrofit과 OkHttp로 말투 설정·대화 이력을 포함한 변환 요청을 처리했습니다.
+- 응답 재생성과 직접 수정한 내용을 별도 버전으로 저장했습니다.
+- 입력 종료 1.2초 후 미리보기를 요청하고, 전송 시 미리보기 결과를 재사용하도록 구성했습니다.
+- API 오류를 사용자 안내 메시지로 표시했습니다.
+
+## 한계와 개선할 점
+
+현재는 Android 클라이언트에서 API를 직접 호출합니다. local.properties를 Git에서 제외하더라도 빌드된 앱의 BuildConfig 값은 추출될 수 있으므로, 배포 전 서버 프록시와 서버 측 인증이 필요합니다.
+응답 피드백은 저장 기능이며, 모델 재학습이나 개인화 학습으로 연결되어 있지는 않습니다.
+미리보기 재사용에 따른 비용·응답 시간 개선율은 별도로 측정하지 않았습니다.
+
+아래는 실행 방법과 상세 기능, 데이터 구조입니다.
 
 ---
 
@@ -188,10 +213,10 @@ BuildConfig constants. They are never hardcoded in source files.
 ### 1. Clone and open
 
 ```
-git clone <repo-url>
+git clone https://github.com/Roooselina/Mobile-Application-Programming.git
 ```
 
-Open the `AI_Tone_Converter_Java` folder in Android Studio.
+Open the `AI_Tone_Converter` folder in Android Studio.
 
 ### 2. Configure credentials
 
@@ -245,7 +270,7 @@ app/build/                compiled output and APK files
 
 | Role | Member |
 |---|---|
-| UI/UX design | Park Gayoung (20234024) |
-| Android development (DB, auth, chat logic, API integration) | Lee Eunjung (20234014) |
-| API integration, prompt engineering, feature refinement | Jo Hanbin (20234036) |
+| UI/UX design | Park Gayoung |
+| Android development (DB, auth, chat logic, API integration) | Lee Eunjung |
+| API integration, prompt engineering, feature refinement | Jo Hanbin |
 
