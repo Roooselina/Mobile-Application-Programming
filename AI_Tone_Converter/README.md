@@ -246,6 +246,6 @@ app/build/                compiled output and APK files
 | Role | Member |
 |---|---|
 | UI/UX design | Park Gayoung |
-| Android development (DB, auth, chat logic, API integration) | Lee EunJeong |
+| Planning, AI feature refinement, account/DB/API architecture, Android development (DB, auth, chat logic, API integration) | Lee EunJeong |
 | API integration, prompt engineering, feature refinement | Jo Hanbin |
 
