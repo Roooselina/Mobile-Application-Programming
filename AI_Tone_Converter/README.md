@@ -5,7 +5,7 @@ using the Anthropic Claude API as the conversion engine.
 
 Soonchunhyang University, Department of Computer Science and Engineering
 Smartphone Application Programming — Final Project, 2026
-Team: Park Gayoung / Lee Eunjung / Jo Hanbin
+Team: Park Gayoung / Lee EunJeong / Jo Hanbin
 
 ---
 
@@ -246,6 +246,6 @@ app/build/                compiled output and APK files
 | Role | Member |
 |---|---|
 | UI/UX design | Park Gayoung |
-| Android development (DB, auth, chat logic, API integration) | Lee Eunjung |
+| Android development (DB, auth, chat logic, API integration) | Lee EunJeong |
 | API integration, prompt engineering, feature refinement | Jo Hanbin |
 
